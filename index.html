@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Da Dhabba | Authentic Culinary Experience</title>
+    <!-- Consolidated all CSS into style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <span class="icon">🍲</span>
+          <h1>CODE DA <span>DHABBA</span></h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://web.whatsapp.com/">
+              <button class="btn-primary" onclick="scrollToMenu()">
+                Order Now
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="badge animate-fade-in">Premium Culinary Experience</span>
+        <h2 class="font-serif animate-slide-up">
+          Not Just Food,<br /><span class="highlight">An Experience</span>
+        </h2>
+        <p class="animate-slide-up delay-1">
+          Welcome to Code Da Dhabba. We blend traditional flavors with modern
+          techniques for an unforgettable dining experience.
+        </p>
+        <div class="hero-btns animate-slide-up delay-2">
+          <a href="#menu" class="btn-primary">Explore Menu</a>
+          <a href="#about" class="btn-outline">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding reveal">
+      <div class="container flex-center">
+        <div class="about-image">
+          <img src="chef.jfif" alt="Chef preparing food" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <h2 class="font-serif section-title">Our Story</h2>
+          <p>
+            Founded in 2010, Code Da Dhabba brings the heart of traditional
+            cooking to your table. Every spice is hand-picked, every dish is a
+            masterpiece crafted with passion and expertise. We believe in fresh,
+            locally sourced ingredients and time-honored recipes passed down
+            through generations.
+          </p>
+          <p>
+            Our mission is to create a culinary journey that delights your
+            senses and leaves you with an unforgettable experience. Come and
+            discover the true taste of authenticity.
+          </p>
+          <a href="#menu" class="btn-primary mt-4">Discover Our Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section section-padding bg-light reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="font-serif section-title">Our Signature Menu</h2>
+          <p class="section-subtitle">
+            Prepared with love and the finest local ingredients.
+          </p>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-category="All">All</button>
+          <button class="filter-btn" data-category="Pasta">Pasta</button>
+          <button class="filter-btn" data-category="Burgers">Burgers</button>
+          <button class="filter-btn" data-category="Rice">Rice</button>
+          <button class="filter-btn" data-category="Desserts">Desserts</button>
+        </div>
+
+        <div id="menu-grid" class="menu-grid">
+          <!-- Items populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      id="testimonials"
+      class="testimonials-section section-padding reveal"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="font-serif section-title">What Our Customers Say</h2>
+          <p class="section-subtitle">
+            Hear from those who've savored the experience.
+          </p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="quote">
+              "Absolutely phenomenal! Every dish was a culinary delight. The
+              Dhabba Special Burger is a must-try!"
+            </p>
+            <div class="customer-info">
+              <img src="https://i.pravatar.cc/50?img=1" alt="Customer Avatar" />
+              <span>Rahul S.</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">
+              "The best pasta I've had outside of Italy. Fresh ingredients and
+              authentic flavors. Highly recommend the Arrabbiata!"
+            </p>
+            <div class="customer-info">
+              <img src="https://i.pravatar.cc/50?img=2" alt="Customer Avatar" />
+              <span>Priya K.</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">
+              "A truly unique dining experience. The Mediterranean Salmon Rice
+              was perfectly cooked and seasoned. Will definitely be back!"
+            </p>
+            <div class="customer-info">
+              <img src="https://i.pravatar.cc/50?img=3" alt="Customer Avatar" />
+              <span>Amit M.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section
+      id="gallery"
+      class="gallery-section section-padding bg-light reveal"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="font-serif section-title">Our Culinary Creations</h2>
+          <p class="section-subtitle">
+            A glimpse into the art behind our food.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <img
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop"
+            alt="Delicious dish 1"
+            loading="lazy"
+          />
+          <img src="burger.png" alt="Delicious dish 2" loading="lazy" />
+          <img src="Arabianpasta.jfif" alt="Delicious dish 3" loading="lazy" />
+          <img src="Biryani.jfif" alt="Delicious dish 4" loading="lazy" />
+          <img src="rabri.jfif" alt="Delicious dish 5" loading="lazy" />
+          <img src="Pasta.jpg" alt="Delicious dish 6" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modal-img" src="" alt="" />
+          </div>
+          <div class="modal-form-container">
+            <h2 id="modal-title" class="font-serif">Checkout</h2>
+            <p id="modal-desc" class="modal-desc"></p>
+            <div id="status-msg"></div>
+
+            <form id="checkout-form">
+              <input type="hidden" id="item-id" />
+              <div class="form-group">
+                <label for="cust-name">Full Name</label>
+                <input
+                  type="text"
+                  id="cust-name"
+                  required
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cust-phone">Phone</label>
+                  <input
+                    type="tel"
+                    id="cust-phone"
+                    required
+                    placeholder="+1 555 000"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cust-email">Email</label>
+                  <input
+                    type="email"
+                    id="cust-email"
+                    required
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cust-address">Delivery Address</label>
+                <textarea
+                  id="cust-address"
+                  required
+                  placeholder="Where should we send your meal?"
+                ></textarea>
+              </div>
+              <button type="submit" id="submit-btn" class="btn-primary w-full">
+                Confirm Order
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="icon">🍲</span>
+            <h1>CODE DA <span>DHABBA</span></h1>
+          </div>
+          <p>Authentic flavors delivered to your doorstep.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png"
+                alt="Facebook"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new--v1.png"
+                alt="Instagram"
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img
+                src="https://img.icons8.com/ios-filled/24/ffffff/twitter--v1.png"
+                alt="Twitter"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>📍 123 Food Street, Foodie City, NY 10001</p>
+          <p>📞 +923749573927</p>
+          <p>📧 info@codedadhabba.com</p>
+          <p>Open: Mon-Sun, 11 AM - 10 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Code Da Dhabba. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">&#8593;</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
